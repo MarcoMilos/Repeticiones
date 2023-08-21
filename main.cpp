@@ -38,19 +38,32 @@ int fibo(int n)
 }
 
 // Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
-// int factorial (int n)
-// {
-//     // caso base
-//     if(n == 0)
-//     {
-//         return 1;
-//     }
-//     else
-//     {
-//         // caso recursivo
-//         return n * factorial(n-1);
-//     }
-// }
+int factorial (int n)
+{
+    // caso base
+    if(n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        // caso recursivo
+        return n * factorial(n-1);
+    }
+}
+
+void inverseStr(std::string str, int n)
+{
+    if(n == 0)
+    {
+        return;
+    }
+    else
+    {
+        std::cout << str[n-1];
+        inverseStr(str, n-1);
+    }
+}
 
 int main()
 {
@@ -68,6 +81,9 @@ int main()
 
     // squats(5);
 
-    std::cout << fibo(3) << std::endl;
+    // std::cout << fibo(5) << std::endl;
+
+    inverseStr("squat", 5);
+    
     return 0;
 }

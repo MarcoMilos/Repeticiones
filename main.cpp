@@ -1,17 +1,32 @@
 #include <iostream>
 
+int factorial (int n)
+{
+    // caso base
+    if(n == 0)
+    {
+        return 1;
+    }
+    else
+    {
+        // caso recursivo
+        return n * factorial(n-1);
+    }
+};
+
 int main()
 {
-    int n = 6;
-    void squats(int n);
-    {
-        int i = 0;
-        do
-        {
-            std::cout << "squats" << std::endl;
-            i++;
-        } while (i < n);
+    // void squats(int n);
+    // {
+    //     int i = 0;
+    //     do
+    //     {
+    //         std::cout << "squats" << std::endl;
+    //         i++;
+    //     } while (i < n);
         
-    }
+    // }
+    
+    std::cout << factorial(3) << std::endl;
     return 0;
 }

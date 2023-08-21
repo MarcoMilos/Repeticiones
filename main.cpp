@@ -24,6 +24,20 @@ void squats(int n)
     }
 }
 
+// metodo fibonacchi
+int fibo(int n)
+{
+    if(n == 0 || n == 1)
+    {
+        return 1;
+    }
+    else
+    {
+        return fibo(n-1) + fibo(n-2);
+    }
+    
+}
+
 // Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
 // int factorial (int n)
 // {
@@ -52,6 +66,7 @@ int main()
     // }
     
     // std::cout << factorial(3) << std::endl;
-    squats(5);
+    // squats(5);
+    std::cout << fibo(3) << std::endl;
     return 0;
 }

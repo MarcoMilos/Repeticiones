@@ -1,19 +1,43 @@
 #include <iostream>
 
-// Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
-int factorial (int n)
+// version 1 de "squats"
+// void squats(int n)
+// {
+//     if(n == 0)
+//     {
+//         return;
+//     }
+//     else
+//     {
+//         std::cout << "squat" << std::endl;
+//         squats(n-1);
+//     }
+// }
+
+// version 2 de "squats"
+void squats(int n)
 {
-    // caso base
-    if(n == 0)
+    if(n > 0)
     {
-        return 1;
+        std::cout << "squat" << std::endl;
+        squats(n-1);
     }
-    else
-    {
-        // caso recursivo
-        return n * factorial(n-1);
-    }
-};
+}
+
+// Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
+// int factorial (int n)
+// {
+//     // caso base
+//     if(n == 0)
+//     {
+//         return 1;
+//     }
+//     else
+//     {
+//         // caso recursivo
+//         return n * factorial(n-1);
+//     }
+// }
 
 int main()
 {
@@ -25,9 +49,9 @@ int main()
     //         std::cout << "squats" << std::endl;
     //         i++;
     //     } while (i < n);
-        
     // }
     
-    std::cout << factorial(3) << std::endl;
+    // std::cout << factorial(3) << std::endl;
+    squats(5);
     return 0;
 }

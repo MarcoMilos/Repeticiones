@@ -1,5 +1,6 @@
 #include <iostream>
 
+// Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
 int factorial (int n)
 {
     // caso base

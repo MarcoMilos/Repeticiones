@@ -35,7 +35,6 @@ int fibo(int n)
     {
         return fibo(n-1) + fibo(n-2);
     }
-    
 }
 
 // Es importante recordar tener un "caso base" y un "caso recursivo" porque, de no tener un "caso base", se vuelve infinito
@@ -66,7 +65,9 @@ int main()
     // }
     
     // std::cout << factorial(3) << std::endl;
+
     // squats(5);
+
     std::cout << fibo(3) << std::endl;
     return 0;
 }
